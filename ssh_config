@@ -1,5 +1,5 @@
 Host *.vmctl.host
   ProxyCommand ~/.skel/bin/vmctl-ssh-wrapper.sh %h %p
-	ControlMaster auto
-	ControlPersist 10m
+  ControlMaster auto
+  ControlPersist 10m
   ForwardX11 yes
