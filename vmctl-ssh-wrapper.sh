@@ -68,7 +68,7 @@ done
 
 
 host_ip=$(ifconfig tap | awk \
-  "(x==1 && /inet /) {print \$2; exit 0}/description: vm.*$host$/ {x=1} " \
+  "(x==1 && /inet /) {print \$2; exit 0}/description: vm.*$host\$/ {x=1} " \
 )
 
 long_host_ip=$(INET_ATON "$host_ip")
